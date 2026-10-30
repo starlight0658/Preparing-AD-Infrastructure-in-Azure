@@ -74,10 +74,10 @@ ipconfig /all
 
 ## Screenshot evidence
 
-**43 original screenshots**, preserved and renamed in chronological capture order. Expand any section to review the Azure Portal, Windows Server, and Client-1 configuration evidence. The initial settings screens and later confirmed results are distinguished below.
+**43 original screenshots**, preserved and renamed in chronological capture order. Review the sections below to see the Azure Portal, Windows Server, and Client-1 configuration evidence. The initial settings screens and later confirmed results are distinguished below.
 
-<details>
-<summary><strong>Azure resource group and virtual network</strong> — images 01–05</summary>
+
+### **Azure resource group and virtual network** — images 01–05
 
 Prepared a dedicated Azure resource group, virtual network, and subnet for both systems.
 
@@ -101,10 +101,9 @@ Prepared a dedicated Azure resource group, virtual network, and subnet for both 
 
 ![Verified the virtual network in Azure](screenshots/05-virtual-network-overview.png)
 
-</details>
 
-<details>
-<summary><strong>Windows Server and Windows client provisioning</strong> — images 06–13</summary>
+
+### **Windows Server and Windows client provisioning** — images 06–13
 
 Configured DC-1 and Client-1 in the same Azure region and virtual network. The actual VM images shown are Windows Server 2025 Datacenter and Windows 11 Pro.
 
@@ -140,10 +139,9 @@ Configured DC-1 and Client-1 in the same Azure region and virtual network. The a
 
 ![Reviewed Windows client VM deployment configuration](screenshots/13-client-vm-review.png)
 
-</details>
 
-<details>
-<summary><strong>Server networking and static private IPv4</strong> — images 14–19</summary>
+
+### **Server networking and static private IPv4** — images 14–19
 
 Verified the server network configuration, then changed DC-1 from dynamic to static private IPv4 allocation at `10.0.0.4`.
 
@@ -171,10 +169,9 @@ Verified the server network configuration, then changed DC-1 from dynamic to sta
 
 ![Confirmed DC-1 private IP 10.0.0.4 is static](screenshots/19-server-nic-static-confirmed.png)
 
-</details>
 
-<details>
-<summary><strong>Remote server access and firewall testing</strong> — images 20–27</summary>
+
+### **Remote server access and firewall testing** — images 20–27
 
 Connected to DC-1 from macOS through Windows App/RDP, opened Server Manager, and inspected Windows Defender Firewall profiles for lab connectivity troubleshooting.
 
@@ -210,10 +207,9 @@ Connected to DC-1 from macOS through Windows App/RDP, opened Server Manager, and
 
 ![Reviewed firewall Public profile settings during connectivity testing](screenshots/27-server-firewall-public-settings.png)
 
-</details>
 
-<details>
-<summary><strong>Client networking and custom DNS</strong> — images 28–35</summary>
+
+### **Client networking and custom DNS** — images 28–35
 
 Verified both VMs, configured Client-1 to use the server private IP `10.0.0.4` as its custom DNS resolver, saved settings, and initiated a client restart.
 
@@ -249,10 +245,9 @@ Verified both VMs, configured Client-1 to use the server private IP `10.0.0.4` a
 
 ![Verified Client-1 was running in Azure](screenshots/35-client-vm-running.png)
 
-</details>
 
-<details>
-<summary><strong>Client access, connectivity troubleshooting, and validation</strong> — images 36–43</summary>
+
+### **Client access, connectivity troubleshooting, and validation** — images 36–43
 
 Connected to Client-1, observed initial ICMP timeouts, adjusted the server firewall for this controlled test, and verified successful ICMP replies and the client DNS entry.
 
@@ -288,7 +283,6 @@ Connected to Client-1, observed initial ICMP timeouts, adjusted the server firew
 
 ![Verified ipconfig /all on Client-1 lists DNS server 10.0.0.4](screenshots/43-client-ipconfig-dns.png)
 
-</details>
 
 ---
 
